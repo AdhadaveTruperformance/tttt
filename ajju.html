@@ -1,0 +1,1418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="https://truperformancedigital.com/wp-content/uploads/2024/11/cropped-android-chrome-512x512-3-32x32.png" sizes="32x32">
+    <!-- Google Tag Manager -->
+
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+
+        })(window, document, 'script', 'dataLayer', 'GTM-KRKRMLK8');</script>
+
+    <!-- End Google Tag Manager -->
+
+
+
+
+    <script>
+        !function (t, e) { var o, n, p, r; e.__SV || (window.posthog = e, e._i = [], e.init = function (i, s, a) { function g(t, e) { var o = e.split("."); 2 == o.length && (t = t[o[0]], e = o[1]), t[e] = function () { t.push([e].concat(Array.prototype.slice.call(arguments, 0))) } } (p = t.createElement("script")).type = "text/javascript", p.crossOrigin = "anonymous", p.async = !0, p.src = s.api_host.replace(".i.posthog.com", "-assets.i.posthog.com") + "/static/array.js", (r = t.getElementsByTagName("script")[0]).parentNode.insertBefore(p, r); var u = e; for (void 0 !== a ? u = e[a] = [] : a = "posthog", u.people = u.people || [], u.toString = function (t) { var e = "posthog"; return "posthog" !== a && (e += "." + a), t || (e += " (stub)"), e }, u.people.toString = function () { return u.toString(1) + ".people (stub)" }, o = "init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey getNextSurveyStep identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "), n = 0; n < o.length; n++)g(u, o[n]); e._i.push([i, s, a]) }, e.__SV = 1) }(document, window.posthog || []);
+        posthog.init('phc_pM7qlDoqxiXAI09y4F1zF1CFJ2izFYh076MXOeIqwvA', {
+            api_host: 'https://us.i.posthog.com',
+            person_profiles: 'identified_only' // or 'always' to create profiles for anonymous users as well
+        })
+    </script>
+
+
+
+
+    <!-- Google Tag Manager (noscript) -->
+
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KRKRMLK8" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+
+    <!-- End Google Tag Manager (noscript) -->
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tru Access Hub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     
+     <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        section#quick-links {
+            padding: 50px 0px;
+        }
+        section#meeting-section {
+            padding: 50px 0px;
+        }
+        .center-text {
+            font-family: "Poppins", sans-serif;
+            text-align: center;
+            /* margin-top: 40px; */
+            display: block;
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 40px;
+        }
+
+        .second-text {
+            font-family: "Poppins", sans-serif;
+            text-align: center;
+            display: block;
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 40px;
+            /* margin-top: 40px; */
+        }
+
+        .text-center-text {
+            font-family: "Poppins", sans-serif;
+            text-align: center;
+            /* margin-top: 40px; */
+            display: block;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        /* header {
+        background-color: #000;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+
+    header img {
+        width: 210px;
+        object-fit: contain;
+    }
+
+    header h1
+    {
+        display: block;
+        font-size: 2em;
+        margin-block-start: 0.67em;
+        margin-block-end: 0.67em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+    } */
+        .cta-container {
+            text-align: center;
+            margin-top: 0px;
+        }
+
+        .cta-button {
+            display: block;
+            width: fit-content;
+            padding: 10px 20px;
+            text-decoration: none;
+            margin: 10px auto;
+            font-family: "Poppins", sans-serif;
+            font-size: 13px;
+            font-weight: 600;
+            text-transform: uppercase;
+            line-height: 1em;
+            color: #000;
+            border-radius: 5px;
+            transition: ease-in-out .3s;
+            border: 1px solid gray;
+        }
+
+        .cta-button:hover {
+            background-color: #FF6138;
+            transition: ease-in-out.3s;
+            color: #FFFFFF;
+            text-decoration: none;
+            border: 1px solid #FF6138;
+        }
+
+        .cta-text-img {
+            display: block;
+            width: fit-content;
+            padding: 10px 20px;
+            text-decoration: none;
+            margin: 10px auto 20px;
+            line-height: 1em;
+            color: #FFFFFF;
+            border-radius: 5px;
+        }
+
+        .cta-div-first {
+            padding: 20px 10px;
+            border: 1px solid #00000026;
+            margin: 10px;
+            font-family: "Poppins", sans-serif;
+            line-height: 25px;
+            transition: ease-in-out .3s;
+            text-align: center;
+        }
+
+        .cta-div {
+            padding: 20px 10px;
+            border: 1px solid #00000026;
+            /* margin: 10px; */
+            font-family: "Poppins", sans-serif;
+            line-height: 25px;
+            transition: ease-in-out .3s;
+            text-align: center;
+            height: 100%;
+        }
+
+        .cta-div img {
+            width: 150px;
+            height: 150px;
+            margin-bottom: 10px;
+        }
+
+        .cta-div p {
+            margin: 20px;
+        }
+
+
+        .cta-div:hover {
+            box-shadow: 5px 5px 10px #00000021;
+            transition: ease-in-out .3s;
+        }
+
+        .form-control {
+            height: 35px;
+            padding: 6px 12px;
+            font-size: 15px;
+            color: #000;
+            border: 1px solid #FF6138;
+            border-radius: 5px;
+            box-shadow: -1px 2px 5px #00000036;
+            transition: none;
+            /* margin: 0 0 5px; */
+        }
+
+        .submit-btn {
+            height: 38px;
+            display: inline-block;
+            padding: 5px 10px;
+            background-color: #FF6138;
+            text-decoration: none;
+            font-family: "Poppins", sans-serif;
+            font-size: 15px;
+            font-weight: 600;
+            text-transform: uppercase;
+            line-height: 1em;
+            color: #FFFFFF;
+            border-radius: 5px;
+            transition: ease-in-out .3s;
+            border: none;
+            width: 100%;
+        }
+
+        button:focus {
+            outline: 0;
+        }
+
+        .path-info {
+
+            max-width: 100%;
+            margin-top: 1.5rem;
+            position: relative;
+            text-align: center;
+        }
+
+        .output {
+            width: 100%;
+            padding: 1rem;
+            /* background-color: #f5f5f5; */
+            border-radius: 8px;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            min-height: 60px;
+            margin-bottom: 1rem;
+            display: inline;
+        }
+
+        #copyButton {
+            margin-left: 20px;
+            padding: 10px 20px;
+            background-color: #FF6138;
+            text-decoration: none;
+            font-family: "Poppins", sans-serif;
+            font-size: 13px;
+            font-weight: 600;
+            text-transform: uppercase;
+            line-height: 1em;
+            color: #FFFFFF;
+            border-radius: 5px;
+            transition: ease-in-out .3s;
+            border: none;
+            display: none;
+        }
+
+        .text-center-para {
+            font-family: "Poppins", sans-serif;
+            line-height: 25px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .cta-container {
+            display: flex;
+            width: 1240px;
+            margin: 20px auto 0;
+        }
+
+        /* .communication-tools {
+
+            margin-bottom: -60px;
+
+        } */
+
+        .path-info.text-center {
+            margin-bottom: 100px;
+        }
+
+
+        /* .quick-links {
+
+            display: grid;
+
+            grid-template-columns: repeat(2, 1fr);
+
+            justify-items: center;
+
+            gap: 20px;
+
+        } */
+
+        section#meeting-section {
+            padding: 50px 0px;
+        }
+        section#access-files {
+            padding: 50px 0px;
+        }
+        section#file-path-generator {
+            padding-top: 50px;
+            padding-bottom: 0px;
+        }
+        .quick-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            column-gap: 60px;
+            row-gap: 60px;
+        }
+
+        .quick-link img {
+            width: 200px;
+            height: 68px;
+            object-fit: contain;
+            /* margin-bottom: 60px; */
+        }
+
+
+
+      
+        .nav-link
+        {
+            padding: 0px;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+            margin: 0;
+            padding: 0;
+            padding-bottom: 50px;
+        }
+        body {
+            font-family: "Poppins", sans-serif;
+            margin: 0;
+            padding: 0;
+            padding-bottom: 50px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 25px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo img {
+            height: 50px;
+        }
+
+        .nav-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .menu-toggle span {
+            height: 3px;
+            width: 25px;
+            background-color: #333;
+            margin: 4px 0;
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-item {
+            padding: 0 26px;
+            text-decoration: none;
+            color: #333;
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        .nav-item.active {
+            color: #FF6138;
+        }
+
+        .nav-item:hover {
+            color: #FF6138;
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        /* .dropdown-toggle::after {
+            content: "\f107";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            margin-left: 5px;
+        } */
+
+        .dropdown-menu {
+           
+        }
+        .unique
+        {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            right: 0;
+            left: unset;
+        }
+        .dropdown-menu.show {
+            display: block;
+        }
+
+        .dropdown-item {
+            padding:8px;
+            text-decoration: none;
+            display: block;
+            color: #333;
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        .dropdown-item:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown-item.active, .dropdown-item:active {
+            color: #333;
+            text-decoration: none;
+        }
+        .dropdown-item:hover {
+            background-color: #FF6138;
+            color: #fff;
+        }
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: flex;
+            }
+
+            .nav {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                right: 0;
+                background-color: #fff;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+
+            .nav.show {
+                display: flex;
+                padding: 0px 133px;
+            }
+
+            .nav-item {
+                padding: 12px 16px;
+                width: 100%;
+                text-align: left;
+            }
+
+            .dropdown-menu {
+                position: static;
+                box-shadow: none;
+                background-color: #f9f9f9;
+            }
+
+            .dropdown-item {
+                padding-left: 40px;
+            }
+        }
+                    /* Parent container for the services */
+            .row-meeting {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+
+            /* Each service box */
+            .services {
+                width: 200px;
+                padding: 16px 22px;
+                border-radius: 8px;
+                border: 1px solid var(--Deactive-Card-Color, #E4E4E4);
+                display: flex;
+                column-gap: 15px;
+                align-items: center;
+                transition: box-shadow 0.3s ease-in-out;
+            }
+
+            /* Add hover effect to make the box clickable */
+            .services:hover {
+                box-shadow: 5px 5px 10px #00000021;
+                transition: ease-in-out 0.3s;
+                color: #212529;
+            }
+
+            /* Styling the anchor tag to cover the whole box */
+            .services-link {
+                text-decoration: none; /* Remove underline */
+                color: inherit; /* Maintain original text colors */
+                display: block; /* Make the anchor behave like a block */
+            }
+
+            /* Service image */
+            .serv-image img {
+                width: 60px;
+                height: 60px;
+                border-radius: 100%;
+                display: flex;
+                align-items: center;
+            }
+
+            /* Service information section */
+            .serv-info h1 {
+                font-size: 15px;
+                font-family: "Poppins", sans-serif;
+                margin-bottom: 8px;
+                margin-left: 8px;
+                width: 90px;
+            }
+
+            /* Join button container */
+            .join-container {
+                display: flex;
+                align-items: center;
+                column-gap: 5px;
+                transition: ease-in-out 0.3s;
+                width: 60px;
+                padding: 0px 10px;
+            }
+
+            /* Join button hover */
+            .join-container:hover {
+                background: #FF6138; 
+                color: #fff;
+                border-radius: 50px;
+            }
+
+            .join-container:hover .join-button {
+                color: #FFFFFF;
+            }
+
+            .join-container:hover .fa-solid {
+                color: #FFFFFF;
+            }
+
+            /* Join button */
+            span.join-button  {
+                font-family: "Poppins", sans-serif;
+                color: #000;
+                font-size: 12px;
+                font-weight: 700;
+            }
+
+            /* Icon style */
+            .fa-arrow-right {
+                font-size: 13px;
+                color: #000;
+            }
+
+        /* For Mobile View */
+        @media (min-width: 320px) and (max-width: 767px) {
+            .quick-links {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                column-gap: 30px;
+                row-gap: 60px;
+            }
+
+            .quick-link img {
+                width: 140px;
+            }
+
+            .alternate {
+                margin-bottom: 30px;
+            }
+
+            .form-control {
+                margin-bottom: 20px;
+            }
+            .cta-button{
+                background-color: #FF6138;
+                transition: ease-in-out .3s;
+                color: #FFFFFF;
+                text-decoration: none;
+                border: 1px solid #FF6138;
+            }
+            .row-meeting {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                row-gap: 30px;
+                column-gap: 10px;
+            }
+            .services
+            {
+                width: 170px;
+                column-gap: 0px;
+            }
+            .join-container {
+                background: #FF6138;
+                color: #fff;
+                border-radius: 50px;
+                margin-left: 5px;
+            }
+            span.join-button, .fa-arrow-right
+            {
+                color: #fff;
+            }
+        }
+
+
+        @media (min-width: 768px) and (max-width: 1024px) {
+            .quick-links {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                column-gap: 40px;
+                row-gap: 60px;
+            }
+
+            .form-control {
+                margin-bottom: 20px;
+            }
+
+            .path-info {
+                text-align: center;
+                margin-top: 15px;
+            }
+
+            .alternate {
+                margin-bottom: 30px;
+            }
+            .row-meeting {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                row-gap: 30px;
+                column-gap: 30px;
+            }
+            /* .cta-button{
+                background-color: #FF6138;
+                transition: ease-in-out .3s;
+                color: #FFFFFF;
+                text-decoration: none;
+                border: 1px solid #FF6138;
+            } */
+        }
+        a:hover {
+            text-decoration: none!important;
+        }
+        .nav-link:focus, .nav-link:hover {
+            text-decoration: none!important;
+        }
+        .nav-link:focus, .nav-link:hover {
+            color:unset;
+        }
+        .nav-link {
+            padding: 0px;
+            text-decoration: none;
+            color: #333;
+            font-size: 15px;
+            font-weight: 600;
+        }
+        .dropdown-toggle::after
+        {
+            content:none;
+        }
+        .fa-chevron-down
+        {
+            margin-left: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- <header class="header">
+        <div class="logo">
+            <img src="https://tp-devserver.com/staging/wp-content/uploads/2024/11/Tru-Innovation-Lab-Logos1.png" alt="Tru-Innovation-Lab-Logo">
+        </div>
+        <div class="nav-container">
+            <div class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="nav" id="nav-menu">
+                <a href="#quick-links" class="nav-item active">Quick Links</a>
+                <a href="#meeting-section" class="nav-item">Zoom Hub</a>
+                <a href="#access-files" class="nav-item">Access Files</a>
+                <a href="#file-path-generator" class="nav-item">File Generator</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+            </nav>
+        </div>
+    </header> -->
+    <header class="header">
+    <div class="logo">
+        <img src="https://tp-devserver.com/staging/wp-content/uploads/2024/11/Tru-Innovation-Lab-Logos1.png" alt="Tru-Innovation-Lab-Logo">
+    </div>
+    <div class="nav-container">
+        <div class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="nav" id="nav-menu">
+            <a href="#quick-links" class="nav-item active">Quick Links</a>
+            <a href="#meeting-section" class="nav-item">Zoom Hub</a>
+            <a href="#access-files" class="nav-item">Access Files</a>
+            <a href="#file-path-generator" class="nav-item">File Generator</a>
+            <div class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" aria-expanded="false">
+                    Request Form
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
+                <ul class="dropdown-menu unique" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="https://www.hellopeter.com/" target="_blank">Design Request Form</a></li>
+                    <li><a class="dropdown-item" href="https://www.hellopeter.com/" target="_blank">Developement Request Form</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    </header>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navItems = document.querySelectorAll('.nav-item');
+            const dropdownToggle = document.querySelector('.dropdown-toggle');
+            const dropdownMenu = document.querySelector('.dropdown-menu');
+    
+            function toggleMenu() {
+                const navMenu = document.getElementById('nav-menu');
+                const menuToggle = document.querySelector('.menu-toggle');
+                const isExpanded = navMenu.classList.toggle('show');
+                menuToggle.setAttribute('aria-expanded', isExpanded);
+                
+                if (!isExpanded) {
+                    dropdownMenu.classList.remove('show');
+                }
+            }
+    
+            dropdownToggle.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                dropdownMenu.classList.toggle('show');
+            });
+    
+            document.addEventListener('click', function(e) {
+                if (!dropdownToggle.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                    dropdownMenu.classList.remove('show');
+                }
+            });
+    
+            dropdownMenu.querySelectorAll('.dropdown-item').forEach(item => {
+                item.addEventListener('click', function(e) {
+                    e.stopPropagation(); // Prevent the click from closing the dropdown
+                    if (window.innerWidth <= 768) {
+                        dropdownMenu.classList.remove('show');
+                        toggleMenu();
+                    }
+                });
+            });
+    
+            navItems.forEach(item => {
+                item.addEventListener('click', function(e) {
+                    if (this.classList.contains('dropdown')) return;
+                    
+                    e.preventDefault();
+                    navItems.forEach(navItem => navItem.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    const headerHeight = document.querySelector('.header').offsetHeight;
+                    const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+                    
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                    
+                    if (window.innerWidth <= 768) {
+                        toggleMenu();
+                    }
+                });
+            });
+        });
+    </script>
+
+    <script>
+        function toggleMenu() {
+            const navMenu = document.getElementById('nav-menu');
+            navMenu.classList.toggle('show');
+        }
+    </script>
+
+    <section id="quick-links">
+        <div class="container">
+
+            <h2 class="center-text">Quick Links</h2>
+
+            <div class="quick-links">
+
+                <a href="https://slack.com" target="_blank" class="quick-link" id="openSlack">
+
+                    <img src="https://tp-devserver.com/staging/wp-content/uploads/2024/11/Slack.png" alt="Slack">
+
+                </a>
+
+                <a href="https://monday.com" target="_blank" class="quick-link" id="openMondayBoard">
+
+                    <img src="https://tp-devserver.com/staging/wp-content/uploads/2024/11/Monday.com_.png"
+                        alt="Monday.com">
+
+                </a>
+
+                <a href="https://outlook.office.com/" target="_blank" class="quick-link" id="microsoftOutLook">
+
+                    <img src="https://tp-devserver.com/staging/wp-content/uploads/2024/11/Outlook-1.png" alt="Outlook">
+
+                </a>
+
+                <a href="https://academy.truperformancedigital.com/" target="_blank" class="quick-link" id="truLMS">
+
+                    <img src="https://tp-devserver.com/staging/wp-content/uploads/2024/11/Tru-Learning-Academy-Logo-B-v2.png"
+                        alt="TRU LMS">
+
+                </a>
+
+                <a href="https://apps.paybooks.in/" target="_blank" class="quick-link" id="payBook">
+
+                    <img src="https://tp-devserver.com/staging/wp-content/uploads/2024/11/Paybooks.png" alt="Paybooks">
+
+                </a>
+
+                <a href="https://chat.openai.com/" target="_blank" class="quick-link" id="chatGPT">
+
+                    <img src="https://tp-devserver.com/staging/wp-content/uploads/2024/11/ChatGPT-1.png" alt="ChatGPT">
+
+                </a>
+
+                <a href="https://www.perplexity.ai/" target="_blank" class="quick-link" id="Perplexity">
+
+                    <img src="https://tp-devserver.com/staging/wp-content/uploads/2024/11/Perplexity-1.png"
+                        alt="ChatGPT">
+
+                </a>
+
+                <a href="https://zoom.us/join" target="_blank" class="quick-link" id="openZoom">
+
+                    <img src="https://tp-devserver.com/staging/wp-content/uploads/2024/11/Zoom.png" alt="openZoom">
+
+                </a>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="meeting-section" id="meeting-section">
+        <div class="container">
+        <h2 class="center-text">Zoom Bridge Quik Links</h2>
+        <div class="row-meeting">
+            <div class="services">
+                <div class="serv-image">
+                    <img src="https://tp-devserver.com/staging/wp-content/uploads/2024/05/Group-1000002219-2.png" alt="">
+                </div>
+                <div class="serv-info">
+                    <h1>Viraj D.</h1>
+                    <div class="join-container">
+                        <a class="join-button" href="https://us06web.zoom.us/j/6314904488">JOIN</a>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+
+                </div>
+            </div>
+            <div class="services">
+                <div class="serv-image">
+                    <img src="https://ca.slack-edge.com/THRQH2AS0-U05NQ1H93DH-646c9cc54a79-512" alt="">
+                </div>
+                <div class="serv-info">
+                    <h1>Denver M.</h1>
+                    <div class="join-container">
+                        <a class="join-button" href="https://us06web.zoom.us/j/4553044608">JOIN</a>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="services">
+                <div class="serv-image">
+                    <img src="https://ca.slack-edge.com/THRQH2AS0-U0367LGMDLL-eb0b06a0778a-512" alt="">
+                </div>
+                <div class="serv-info">
+                    <h1>Moiz R.</h1>
+                    <div class="join-container">
+                        <a class="join-button" href=" https://us06web.zoom.us/j/3097931166">JOIN</a>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="services">
+                <div class="serv-image">
+                    <img src="https://ca.slack-edge.com/THRQH2AS0-U035BDGMZE2-55cdcc716904-512" alt="">
+                </div>
+                <div class="serv-info">
+                    <h1>Manish J.</h1>
+                    <div class="join-container">
+                        <a class="join-button" href="https://us06web.zoom.us/j/7519294477">JOIN</a>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="services">
+                <div class="serv-image">
+                    <img src="https://ca.slack-edge.com/THRQH2AS0-U03SL8KQTBQ-fa170ecf3c7a-512" alt="">
+                </div>
+                <div class="serv-info">
+                    <h1>Jobin V.</h1>
+                    <div class="join-container">
+                        <a class="join-button" href="https://us05web.zoom.us/j/2677254148">JOIN</a>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section> -->
+
+    <section class="meeting-section" id="meeting-section">
+        <div class="container">
+            <h2 class="center-text">Instant Zoom Links</h2>
+            <div class="row-meeting">
+    
+                <!-- Viraj D. -->
+                <a href="https://us06web.zoom.us/j/6314904488" class="services-link" target="_blank">
+                    <div class="services">
+                        <div class="serv-image">
+                            <img src="https://tp-devserver.com/staging/wp-content/uploads/2024/05/Group-1000002219-2.png" alt="">
+                        </div>
+                        <div class="serv-info">
+                            <h1>Viraj D.</h1>
+                            <div class="join-container">
+                                <span class="join-button">JOIN</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+    
+                <!-- Denver M. -->
+                <a href="https://us06web.zoom.us/j/4553044608" class="services-link" target="_blank">
+                    <div class="services">
+                        <div class="serv-image">
+                            <img src="https://ca.slack-edge.com/THRQH2AS0-U05NQ1H93DH-646c9cc54a79-512" alt="">
+                        </div>
+                        <div class="serv-info">
+                            <h1>Denver M.</h1>
+                            <div class="join-container">
+                                <span class="join-button">JOIN</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+    
+                <!-- Moiz R. -->
+                <a href="https://us06web.zoom.us/j/3097931166" class="services-link" target="_blank">
+                    <div class="services">
+                        <div class="serv-image">
+                            <img src="https://ca.slack-edge.com/THRQH2AS0-U0367LGMDLL-eb0b06a0778a-512" alt="">
+                        </div>
+                        <div class="serv-info">
+                            <h1>Moiz R.</h1>
+                            <div class="join-container">
+                                <span class="join-button">JOIN</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+    
+                <!-- Manish J. -->
+                <a href="https://us06web.zoom.us/j/7519294477" class="services-link" target="_blank">
+                    <div class="services">
+                        <div class="serv-image">
+                            <img src="https://ca.slack-edge.com/THRQH2AS0-U035BDGMZE2-55cdcc716904-512" alt="">
+                        </div>
+                        <div class="serv-info">
+                            <h1>Manish J.</h1>
+                            <div class="join-container">
+                                <span class="join-button">JOIN</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+    
+                <!-- Jobin V. -->
+                <a href="https://us05web.zoom.us/j/2677254148" class="services-link" target="_blank">
+                    <div class="services">
+                        <div class="serv-image">
+                            <img src="https://ca.slack-edge.com/THRQH2AS0-U03SL8KQTBQ-fa170ecf3c7a-512" alt="">
+                        </div>
+                        <div class="serv-info">
+                            <h1>Jobin V.</h1>
+                            <div class="join-container">
+                                <span class="join-button">JOIN</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+    
+            </div>
+        </div>
+    </section>
+    
+    <section id="access-files">
+        <div class="container">
+
+            <h2 class="second-text">Access Your Files</h2>
+
+            <div class="row">
+
+                <div class="col-lg-4 col-md-12 alternate">
+
+                    <div class="cta-div">
+                        <img src="https://tp-devserver.com/staging/wp-content/uploads/2024/11/TRU_clientfoldericon_251124_TP110_design_v1.gif"
+                            alt="">
+                        <a href="https://truperformanceus.sharepoint.com/sites/TruPerformanceDataRepository/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FTruPerformanceDataRepository%2FShared%20Documents%2FTru%20Performance%20Clients&p=true&ga=1"
+                            class="cta-button" target="_blank">Client Folders</a>
+
+                        <p> Access Client project folders easily.</p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 col-md-12 alternate">
+
+                    <div class="cta-div">
+                        <img src="https://tp-devserver.com/staging/wp-content/uploads/2024/11/TRU_teamfoldericon_251124_TP110_design_v1.gif"
+                            alt="">
+                        <a href="https://truperformanceus.sharepoint.com/:f:/s/TruPerformanceDataRepository/EqXycO4kQllHuNxVT-4XoCwB0g54-rrEroRug7kdcJ1jFQ?e=chPhrT"
+                            target="_blank" class="cta-button">Team Folders</a>
+
+                        <p> Team and individual folders set for easy access..</p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 col-md-12 alternate">
+
+                    <div class="cta-div">
+                        <img src="https://tp-devserver.com/staging/wp-content/uploads/2024/11/TRU_truplaybooksicon_251124_TP110_design_v1.gif"
+                            alt="">
+                        <a href="https://truperformanceus.sharepoint.com/:f:/s/TruPerformanceDataRepository/Ei08c39xZwVBiAvAfNXIKSsBzIuvZLv-StEoIJQojI8ezg?e=VBqO5C"
+                            target="_blank" class="cta-button">Tru Playbooks</a>
+
+                        <p> Access all Playbooks in Tru Performance style.</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="file-path-generator">
+        <div class="container">
+
+            <h2 class="text-center-text">File Name Generator</h2>
+
+            <p class="text-center-para">Here is our singular system of naming all files at Tru.<br>Use this tool to
+                generate a file name for everything you work on.</p>
+
+            <form id="pathForm">
+
+                <div class="row">
+
+                    <div class="col-lg-10">
+
+                        <div class="row">
+
+                            <div class="col-lg-3 col-md-6 ">
+
+                                <input type="text" id="baseURL" name="baseURL" class="form-control"
+                                    placeholder="Enter Client Name" required>
+
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 ">
+
+                                <input type="text" id="path" name="path" class="form-control"
+                                    placeholder="Enter Project" required>
+
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 ">
+
+                                <input type="text" id="parameter1" name="parameter1" class="form-control"
+                                    placeholder="Enter Task Name">
+
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 ">
+
+                                <input type="text" id="fileversion" name="fileversion" class="form-control"
+                                    placeholder="File Version">
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-2">
+
+                        <button type="submit" class="submit-btn">Generate Path</button>
+
+                    </div>
+
+                </div>
+
+            </form>
+
+            <div class="path-info">
+                <div id="output" class="output"></div>
+
+                <button id="copyButton" class="btn btn-secondary">Copy Path</button>
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+
+        function openApp(appUrl, webUrl) {
+            if (appUrl) {
+                window.location.href = appUrl;
+            }
+            else {
+                setTimeout(() => {
+                    window.location.href = webUrl;
+                }, 1000);
+            }
+        }
+
+        document.getElementById('openSlack').addEventListener('click', function () {
+            event.preventDefault();
+            openApp('slack://open', 'https://slack.com/');
+        });
+
+        document.getElementById('microsoftOutLook').addEventListener('click', function () {
+            event.preventDefault();
+            openApp('ms-outlook://', 'https://outlook.office.com/');
+        });
+
+        document.getElementById('openZoom').addEventListener('click', function () {
+            // event.preventDefault();
+            openApp('zoommtg://zoom.us/join', 'https://zoom.us/join');
+        });
+
+    </script>
+
+    <script>
+
+        document.getElementById("pathForm").addEventListener("submit", function (event) {
+
+            event.preventDefault();
+
+            var baseURL = document.getElementById("baseURL").value.toUpperCase();
+
+            var path = document.getElementById("path").value;
+
+
+
+            function capitalizeEachWord(str) {
+
+                return str.replace(/\b\w/g, function (match) {
+
+                    return match.toUpperCase();
+
+                });
+
+            }
+
+
+
+            var parameter1 = document.getElementById("parameter1").value.trim();
+
+            var fileversion = document.getElementById("fileversion").value.trim();
+
+            var currentDate = new Date();
+
+            var month = ("0" + (currentDate.getMonth() + 1)).slice(-2);
+
+            var day = ("0" + currentDate.getDate()).slice(-2);
+
+            var date = day + month + currentDate.getFullYear();
+
+
+
+            var projectName = capitalizeEachWord(path);
+
+
+
+            var fullPath = baseURL + "_" + projectName;
+
+            if (parameter1 !== "") {
+
+                fullPath += "_" + capitalizeEachWord(parameter1);
+
+            }
+
+            fullPath += "_" + date;
+
+            if (fileversion !== "") {
+
+                fullPath += "_" + capitalizeEachWord(fileversion);
+
+            }
+
+
+
+            document.getElementById("output").innerText = fullPath;
+
+            document.getElementById("copyButton").style.display = "inline-block";
+
+        });
+
+
+
+        document.getElementById("copyButton").addEventListener("click", function () {
+
+            var outputText = document.getElementById("output").innerText;
+
+            navigator.clipboard.writeText(outputText).then(function () {
+
+                alert("Path copied to clipboard: " + outputText);
+
+            }).catch(function (err) {
+
+                console.error('Failed to copy: ', err);
+
+            });
+
+        });
+
+    </script>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                const headerHeight = document.querySelector('.header').offsetHeight;
+                const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navItems = document.querySelectorAll('.nav-item');
+            
+            navItems.forEach(item => {
+                item.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    // Remove active class from all items
+                    navItems.forEach(navItem => navItem.classList.remove('active'));
+                    
+                    // Add active class to clicked item
+                    this.classList.add('active');
+                    
+                    // Smooth scroll to the target section
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    const headerHeight = document.querySelector('.header').offsetHeight;
+                    const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+                    
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    const navMenu = document.getElementById('nav-menu');
+                    if (navMenu.classList.contains('show')) {
+                        toggleMenu();
+                    }
+                });
+            });
+        });
+
+        function toggleMenu() {
+            const navMenu = document.getElementById('nav-menu');
+            const menuToggle = document.querySelector('.menu-toggle');
+            const isExpanded = navMenu.classList.toggle('show');
+            menuToggle.setAttribute('aria-expanded', isExpanded);
+        }
+    </script>
+
+
+     <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const navItems = document.querySelectorAll('.nav-item');
+        const sections = document.querySelectorAll('section');
+    
+        // Function to handle intersection changes
+        function handleIntersect(entries) {
+            entries.forEach(entry => {
+                const navItem = document.querySelector(`.nav-item[href="#${entry.target.id}"]`);
+                if (entry.isIntersecting && entry.intersectionRatio === 1.0) {
+                    // The section is fully visible
+                    navItems.forEach(item => item.classList.remove('active'));
+                    if (navItem) {
+                        navItem.classList.add('active');
+                    }
+                }
+            });
+        }
+    
+        // Create an IntersectionObserver with threshold 1.0 (fully visible)
+        const observer = new IntersectionObserver(handleIntersect, {
+            root: null,
+            threshold: 1.0 
+        });
+    
+
+        // Observe each section
+        sections.forEach(section => observer.observe(section));
+    });
+    
+    </script> 
+    
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navMenu = document.getElementById('nav-menu');
+        const navItems = document.querySelectorAll('.nav-item');
+
+        function toggleMenu() {
+            navMenu.classList.toggle('show');
+        }
+
+        function closeMenu() {
+            navMenu.classList.remove('show');
+        }
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const isClickInside = navMenu.contains(event.target) || menuToggle.contains(event.target);
+            if (!isClickInside && navMenu.classList.contains('show')) {
+                closeMenu();
+            }
+        });
+
+        // Close menu when a nav item is clicked
+        navItems.forEach(item => {
+            item.addEventListener('click', function(e) {
+                if (window.innerWidth <= 768) {
+                    closeMenu();
+                }
+                // Remove active class from all items
+                navItems.forEach(navItem => navItem.classList.remove('active'));
+                // Add active class to clicked item
+                this.classList.add('active');
+            });
+        });
+
+        // Prevent menu from closing when clicking inside it
+        navMenu.addEventListener('click', function(event) {
+            event.stopPropagation();
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+
+</html>
